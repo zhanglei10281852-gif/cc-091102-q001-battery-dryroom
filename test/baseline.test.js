@@ -1,0 +1,2 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import { readFile } from 'node:fs/promises'; import { requestStates } from '../src/domain.js';
+test('事故资料使用有效状态和时间', async () => { const item=JSON.parse(await readFile(new URL('../fixtures/incident.json', import.meta.url))); assert.ok(requestStates.includes(item.state)); assert.ok(Date.parse(item.endsAt)>Date.parse(item.startsAt)); });
