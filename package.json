@@ -1,0 +1,1 @@
+{"name":"battery-dryroom-inspection","version":"0.1.0","private":true,"type":"module","scripts":{"test":"node --test","start":"node src/server.js"},"engines":{"node":">=20"},"description":"固态电池干燥间联合检查协调服务"}
